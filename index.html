@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<!--
+	hacked from http://slides.html5rocks.com/
+	by ps
+	for History of Web Browser Demos
+	Assembly Summer 2013 presentation
+-->
+<html manifest="cache.appcache">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <title>History of Web Browser Demos</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
+    <!--<link id="prettify-link" href="src/prettify/prettify.css" rel="stylesheet" disabled />
+    <link href="css/moon.css" class="theme" rel="stylesheet" />
+    <link href="css/sand.css" class="theme" rel="stylesheet" />
+    <link href="css/sea_wave.css" class="theme" rel="stylesheet" />-->
+    <link href="css/default.css" class="theme" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <div class="presentation">
+      <div id="presentation-counter">Loading forever?...</div>
+      <div class="slides">
+
+        <div class="slide" id="landing-slide">
+          <style>
+            #landing-slide p {
+              font-size: 35px;
+            }
+            p#disclaimer-message {
+              font-size: 20px;
+            }
+          </style>
+          <section class="middle">
+            <p>History of Web Browser Demos</p>
+            <h3><a href="http://tpolm.org/~ps">Filipe Cruz (ps / TPOLM)</a></h3>
+          </section>
+          <aside class="note">
+            <section>
+              Welcome! (This field is for presenter notes and commentary.)
+            </section>
+          </aside> 
+        </div>
+		
+		<div class="slide">
+          <section class="middle">
+            <p>
+			Link to presentation:<br>
+			http://tpolm.org/~ps/history_web_browser_demos
+			<br><br>
+			Shortened:<br>
+			<a href="http://tinyurl.com/webdemos">http://tinyurl.com/webdemos</a>
+			</p>
+          </section>
+          <aside class="note">
+            <section>
+              Welcome! (This field is for presenter notes and commentary.)
+            </section>
+          </aside> 
+        </div>
+
+       <div class="slide" id="introduction">
+          <header><h1>WHOIS...</h1></header>
+          <style>
+            #introduction li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+
+          <section>
+            <ul>
+            <li>Portuguese</li>
+			<li>MSc Informatics Engineer</li>
+			<li>Software Developer at <a href="http://artica.cc">Artica CC</a></li>
+			<li></li>
+            <li>Inhabit TPOLM (demoscener since 1997)</li>
+            <li>scene.org staff and pouet.net admin (2003-2008)</li>
+			<li>Doing some demos for web browsers (2011-2013)</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide" id="table-of-contents">
+          <header><h1>History of Web Browser Demos</h1></header>
+          <style>
+            #toc-list > li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+
+          <section>
+            <ul id="toc-list">
+            	<li>Demoscene Origins</li>
+            	<li>Java Applets</li>
+				<li>Flash</li>
+            	<li>DHTML</li>
+				<li>PHP</li>
+            	<li>Alambik</li>
+            	<li>Flash Again</li>
+            	<li>Javascript Canvas & WebGL</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+        </div>
+
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <style>
+            #toc-list > li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+          <section>
+            <ul id="toc-list">
+            	<li>Crack Intros</li>
+            	<li>C64</li>
+            	<li>Amiga</li>
+            	<li>PC</li>
+            	<li>...</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <section>
+            <p class="center">
+            DATETIME<br>80s------\o/-90s----------2k----------2k10-----
+            <br><br>
+            AGE GROUP<br>14-18 years old
+            <br><br>
+            DEMOSCENE ETHOS<br>Just doings things with the computer
+			<br><br>
+			WEB BROWSER DEMOS<br>No internet!!
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <section>
+            <p class="center">
+            DATETIME<br>80s----------90s-\o/------2k----------2k10-----
+            <br><br>
+            AGE GROUP<br>14-18 years old
+            <br><br>
+            DEMOSCENE ETHOS<br>Pushing limits of hardware
+			<br><br>
+            WEB BROWSER DEMOS<br>BBS'es! Does that count?
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <section>
+            <p class="center">
+            DATETIME<br>80s----------90s------\o/-2k----------2k10-----
+            <br><br>
+            AGE GROUP<br>16-22 years old
+            <br><br>
+            DEMOSCENE ETHOS<br>Code vs Design
+			<br><br>
+            WEB BROWSER DEMOS<br>Massification of internet, Java Applets hype
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <section>
+            <p class="center">
+            DATETIME<br>80s----------90s----------2k-\o/------2k10-----
+            <br><br>
+            AGE GROUP<br>16-25 years old
+            <br><br>
+            DEMOSCENE ETHOS<br>Hardware Acceleration vs not
+			<br><br>
+            WEB BROWSER DEMOS<br>Netscape vs Internet Explorer, Rise of Flash
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <section>
+            <p class="center">
+            DATETIME<br>80s----------90s----------2k------\o/-2k10-----
+            <br><br>
+            AGE GROUP<br>18-30 years old
+            <br><br>
+            DEMOSCENE ETHOS<br>Your Platform vs Modern PC
+			<br><br>
+            WEB BROWSER DEMOS<br>Firefox 2005, Chrome 2009
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <section>
+            <p class="center">
+            DATETIME<br>80s----------90s----------2k----------2k10-\o/
+            <br><br>
+            AGE GROUP<br>18-35 years old
+            <br><br>
+            DEMOSCENE ETHOS<br>Realtime vs YouTube
+			<br><br>
+            WEB BROWSER DEMOS<br>Mobile WebApps, Death of Flash, Rise of WebGL
+            </p>
+          </section>
+        </div>
+ 
+       <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <section>
+            <p class="center">Chart time!</p>
+          </section>
+        </div> 
+ 
+        <div class="slide">
+          <header><h1>Demoscene Origins</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/chart.png" />
+            </p>
+          </section>
+        </div>
+ 
+       <!-- http://evolutionofweb.appspot.com --> 
+        
+ <!--
+
+http://pouet.net/prodlist.php?platform[]=Alambik&platform[]=Flash&platform[]=Java&platform[]=JavaScript&platform[]=PHP&reverse=1&order=release
+
+ -->       
+        
+        
+        <div class="slide">
+          <header><h1>Java</h1></header>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center">Java Applets could run graphics!<br><br>terribly slow<br><br>no 3d<br><br>horrible sound support<br><br>security exploits</p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center">1997<br><br>
+			Assembly 97<br>
+			The Party 97</p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=1997">Assembly 97</a></p>
+            <p class="center">Java democompo<br>
+<pre>
+ 1 Javademo Ankka		Five Coders
+ 2 Super			Ghetto Broz
+ 3 Three levels of Insight	dk-scene
+ 4 Javamiga			dCS
+</pre>
+ </p>
+          </section>
+        </div>
+ 
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+           	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=45&when=1998">The Party 97</a></p>
+            <p class="center">Java democompo<br>
+<pre>
+1  Stakater                Prone
+2  Mute                    Complex
+3  Minus 61 In Detroit     Ram Jam
+4  Hype                    The Digital Nerds
+5  Ego Tripping            Sonik Clique
+6  Mer' Strøm              The Leather Pants
+7  Method Man
+8  The Grind               Pee Wee
+9  X Hublus Matofakus      Hirmus
+10 Micro                   Flemming Jans
+11 Rising Star             Epsilon 3
+12 Blocüt                  Blocüt
+</pre>
+ </p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center">1998<br><br>
+			The Gathering 98<br>
+			Takeover 98<br>
+			Assembly 98<br>
+			The Party 98</p>
+          </section>
+        </div>
+		
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=43&when=1998">The Gathering 98</a></p>
+            <p class="center">Java democompo<br>
+<pre>
+1. Forward			Komplex
+2. Next				Digital Nerds
+3. Helt Sten			Nocturnal
+4. Pomp the h-town everyday	H-town Playaz
+</pre>
+ </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+        	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=42&when=1998">Takeover 98</a></p>
+            <p class="center">Java democompo<br>
+<pre>
+1. Flow                     Digital Nerds
+2. Coal                     Otak Inc.
+3. Antiblur                 Antiblur
+</pre>
+ </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=1998">Assembly 98</a></p>
+            <p class="center">Java democompo<br>
+<pre>
+1.  GODOG			Complex
+2.  Loop.2			Digital Nerds
+3.  Lava			Yodel
+4.  golden kypersumppi		tAAt 1998
+5.  IT CAN'T BIDONE		Ram Jam
+6.  Space Odyssey		NySTuL
+7.  Return of the Mack		H-Town/Silents
+8.  Lee				Sail
+</pre>
+ </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=45&when=1998">The Party 98</a></p>
+            <p class="center">Java democompo</a><br>
+<pre>
+ 1. Apex                        digital nerds
+ 2. Letmaelk IV                 E605 & Phosphor
+</pre>
+</p>
+<p class="center">Java intro compo<br>
+<pre>
+
+ 1. supermegaplus               Prone
+</pre>
+ </p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center">1999<br><br>
+			The Gathering 99<br>
+			Takeover 99<br>
+			Assembly 99</p>
+			</section>
+        </div>
+		
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=45&when=1998">The Gathering 99</a></p>
+            <p class="center">Java democompo</a><br>
+<pre>
+1. Lucid Dream			Digital Nerds
+2. Cayenne			Prone
+3. tyyny			Esa Type & Sir Ed. B.
+</pre>
+</p>
+          </section>
+        </div>    
+
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=42&when=1999">Takeover 99</a></p>
+            <p class="center">Java democompo</a><br>
+<pre>
+1. Stress!		Infuse Project
+2. Legend		OtakInc
+</pre>
+</p>
+          </section>
+        </div>   
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=99">Assembly 99</a></p>
+            <p class="center">Java democompo</a><br>
+<pre>
+1. I						Yodel
+2. cyboman 2					komplex
+3. Lain						OtakInc
+4. Top Billing, Jar Jar Binks Killing		H-town
+5. PikaNutru					tAAt
+</pre>
+</p>
+          </section>
+        </div>   
+
+		<div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center">2000<br><br>
+			The Gathering 2000 Java democompo</p>
+			</section>
+        </div>
+		
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=43&when=00">The Gathering 2000</a></p>
+            <p class="center">Java democompo</a><br>
+<pre>
+1. No You Dont				Prone, Blasphemy and Tpolm
+2. adam7				Prone & Excess
+3. CPU shortage in The Neutral Zone	The Hullkort Masters
+4. Hagle				Anakata
+</pre>
+</p>
+          </section>
+        </div>   
+        
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center">After 2000<br>no more Java democompos<br><br>web friendly demoparties switched<br>to Flash or browser</p>
+          </section>
+        </div>   
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center"><br>LTP 4 Invitation / Equinox<br><br><img src="data/111.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center"><br>mixed bag / Komplex<br>Assembly 2000<br><br><img src="data/252.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center"><br>tulnukas / Komplex<br>Proxy 2000<br><br><img src="data/891.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center"><br>Code Police / Mankind<br>Synthesis 2001<br><br><img src="data/1788.gif"></p>
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1>Java</h1></header>
+          <section>
+            <p class="center"><br>avaruusseikkailu / aikarele & fuzzion<br>Euskal 2001<br><br><img src="data/3571.jpg"></p>
+          </section>
+        </div>
+
+ 
+		<div class="slide">
+          <header><h1>Flash</h1></header>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Browser plugin from Macromedia<br><br>became known as an advanced web authoring tool<br><br>slow<br><br>buggy sound<br><br>no 3D</p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Different Web One / <a href="http://www.melondezign.com/">Melon Dezign</a><br><br>1998</p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=00">Assembly 2000</a></p>
+            <p class="center">Flash demo compo</a><br>
+<pre>
+1.	Party People				Alpha Design 
+2.	vesileimat alkkareissa			tAAt 
+3.	pro					jackal 
+4.	No Way					Tunneli.com 
+5.	Operation Kala-Kalle -First Adventure	Aropupu 
+6.	pingpong				kure+aava 
+7.	The Nerd				ChosenOne 
+8.	Jumalanako mahtavaa?			p.orkkana 
+9.	purkamo.com featuring paleface		purkamo.com 
+10.	Astraalikakka				SE8.ORG
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=10&when=00">Bizarre 2000</a></p>
+            <p class="center">Flash demo compo</a><br>
+<pre>
+1. Possibilities with Flash    Active Interactive
+2. Flash Compo ?               UT clan LEGO
+3. Widescreen                  RBI
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=45&when=00">The Party 2000</a></p>
+            <p class="center">Flash demo compo</a><br>
+<pre>
+ 1 Plasticwrap                  Haujobb 
+ 2 They Gave Me Lsd             RNO
+ 3 Pronestar                    Prone
+ 4 Svesk The Party 2000         Goods
+ 5 BTTR                         A-D
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1400&when=01">The Meltdown 2000</a></p>
+            <p class="center">Flash demo compo</a><br>
+<pre>
+ 1. ViBE	ByteBusters
+ 2. Saxy	TBC
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=42&when=01">Takeover 2001</a></p>
+            <p class="center">Browser demo compo</a><br>
+<pre>
+1. Omega Interactive by Error323/ReDoX / Omega Interactive
+2. Phat Frenzy by Screes and Bassie / Active Interactive
+3. Troublemakers by Berzerker / Okkie / Tentacle
+4. D Project by Evil Knieval / Tentacle
+5. die Blumenkinder by Black Maiden
+6. Voyager by Daniel Barton a.k.a. goeb / RotA
+7. "Look-mommy-I-made-this-in-less-than-five-minutes" by Gasbag / D-Coy
+8. gentics demo by Pazazzo / ---
+9. flash by aancsiid / dog
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=01">Assembly 2001</a></p>
+            <p class="center">Flash demo compo</a><br>
+<pre>
+ 1 Häiriö                      RNO
+ 2 Ufo vs Jurppi               Yazu / Kellari
+ 3 pixel:engine                Esko Ahonen
+ 4 katse                       kone
+ 5 Shiver                      Outkazt
+ 6 SUB7                        subterfuge
+ 7 Lonestar                    RedHillDrunks
+ 8 years                       some
+ 9 pipedope                    jac
+10 Outsider                    Rable
+11 The Flex quadri             Lame Illusions Corp.
+12 Trafintu                    Diza
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=334&when=01">The Meltdown 2001</a></p>
+            <p class="center">Flash demo compo</a><br>
+<pre>
+1 45ound			TBC
+2 The TMD Game			USSR-Network
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=45&when=01">The Party 2001</a></p>
+            <p class="center">ASUS Flash demo</a><br>
+<pre>
+1 Whitebalance
+2 Well gues 
+3 hemkunskap 
+</pre>
+</p>
+            <p class="center">Flash demo compo</a><br>
+<pre>
+1 Alice in Wonderland		RNO
+2 Delirium
+3 Ontogeny			mfx & Spinning Kids & Fairlight
+4 Night Life
+</pre>
+</p>
+          </section>
+        </div>  
+
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=02">Assembly 2002</a></p>
+            <p class="center">Flash demo compo</a><br>
+<pre>
+ 1. Super mushroom sisters by RNO 
+ 2. Kreivi Krapula by Rapture Seekers 
+ 3. Evolve by Esko Ahonen & Milan Kolarovic 
+ 4. Terrori by K-Statik/Outkazt 
+ 5. linear motion by hannu_ 
+ 6. Recycled by Bombsquad 
+ 7. Multiplex by Redhill Drunks 
+ 8. Nendo by wain and codec 
+ 9. Grunge212 by Kone creations 
+10. Warbirds by Inapt 
+11. Paradigm by Kellari 
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">After 2002<br>almost no Flash democompos<br><br>all web friendly demoparties switched to<br>browser demo compos</p>
+          </section>
+        </div>
+		
+		
+ 
+        <div class="slide">
+          <header><h1>DHTML</h1></header>
+        </div>  
+
+        <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center">Dynamic HTML<br><br>Javascript without HTML5 canvas!<br><br>no graphics API at all<br><br>sound support using plugins</p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center">Hau Strange / Haujobb<br>Mekka Symposium 2000<br><br><img src="data/15054.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center">256b.htm compos (2002)</p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center">Array / DraftingZup<br>The Gathering 2002<br><br><img src="data/5618.gif"></p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=04">Assembly 2004</a></p>
+            <p class="center">Browser demo</a><br>
+<pre>
+1 Mooncheese by Shingebis [Javascript & DHTML]
+2 the Summer is HERE! by kellari & inapt [Flash]
+3 Kontrast by Pyrotech [Flash]
+4 Governmentro by MukaSmarts [Shockwave 3D & Flash]
+5 Party Island by Poro & Exca [Flash]
+6 Kuutioprojekti by Plinc [Flash]
+</pre>
+</p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center">Mooncheese / Shingebis<br>Assembly 2004<br><br><img src="data/13121.png"></p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=05">Assembly 2005</a></p>
+            <p class="center">Browser demo</a><br>
+<pre>
+1 Redbug by Shingebis
+2 the drop by komplex
+3 pure javascript demo by IKU
+4 Neja by ribbon + bomb
+5 Scene of Life by Inapt & Static
+6 I,Mofo by Pyrotech
+7 Etsin unelmaa by CND GROUP
+</pre>
+</p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center">Redbug / Shingebis<br>Assembly 2005<br><br><img src="data/18326.jpg"></p>
+          </section>
+        </div>
+        
+         <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center">pure javascript demo / iku<br>Assembly 2005<br><br><img src="data/18327.jpg"></p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center"><a href="http://www.p01.org/releases/Neja/">Neja</a> / Ribbon + Bomb!<br>Assembly 2005<br><br><img src="data/18328.png"></p>
+          </section>
+        </div>
+        
+    	<div class="slide">
+          <header><h1>DHTML</h1></header>
+          <section>
+            <p class="center">In 2005 the canvas element was added to browsers<br><br>DHTML as a demo platform died</p>
+          </section>
+        </div>
+
+
+		<div class="slide">
+          <header><h1>PHP</h1></header>
+        </div>  
+
+        <div class="slide">
+          <header><h1>PHP</h1></header>
+          <section>
+            <p class="center">Server side web demos<br><br><a href="http://phpdemo.pseudohacker.org/">http://phpdemo.pseudohacker.org/</a></p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>PHP</h1></header>
+          <section>
+            <p class="center">worlds first: '3d-engine' in php / Rasmus<br>2002<br><br><img src="data/7379.jpg"></p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>PHP</h1></header>
+          <section>
+            <p class="center">Timecube / Jumalauta<br>2006<br><br><img src="data/23403.jpg"></p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>PHP</h1></header>
+          <section>
+            <p class="center">Spinning Jenny / Kryo<br>2007<br><br><img src="data/30759.jpg"></p>
+          </section>
+        </div>
+		
+		
+        <div class="slide">
+          <header><h1>Alambik</h1></header>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Alambik</h1></header>
+          <section>
+            <p class="center">Browser plugin<br><br>programming language for realtime graphics<br><br>"Better than Flash"</p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>Alambik</h1></header>
+          <section>
+            <p class="center">Borg / Rez<br>Mekka & Symposium 2002<br><br><img src="data/5628.jpg"></p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>Alambik</h1></header>
+          <section>
+            <p class="center">Thank You / Razor 1911<br>Alambik Contest 2002<br><br><img src="data/6836.jpg"></p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>Alambik</h1></header>
+          <section>
+            <p class="center">SSG / Goyave<br>2002<br><br><img src="data/6849.jpg"></p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Alambik</h1></header>
+          <section>
+            <p class="center">Evil Intro / Surprise! Productions<br>2002<br><br><img src="data/7608.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Alambik</h1></header>
+          <section>
+            <p class="center">MegaFlip / woodtower<br>Synthesis 2004<br><br><img src="data/11644.jpg"></p>
+          </section>
+        </div>
+        
+         <div class="slide">
+          <header><h1>Alambik</h1></header>
+          <section>
+            <p class="center">Around 2004 Alambik development was discontinued</p>
+          </section>
+        </div>
+
+
+ 		<div class="slide">
+          <header><h1>Flash Again</h1></header>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=03">Assembly 2003</a></p>
+            <p class="center">Browser demo</a><br>
+<pre>
+ 1. super fantastic gaydisco all night long [Flash] by DAMONES & RNO 
+ 2. sUPERPOWERgirl [Flash] by Kone Creations 
+ 3. Linear Motion 2 [Flash] by kellari 
+ 4. w0rd! [Flash] by natural born chillaZ 
+ 5. Fragile [Flash] by Pyrotech 
+ 6. bOOm [Flash] by Exca & Poro 
+ 7. Jazz duck factory [Director] by Citec 
+ 8. Flash Reality [Flash] by The Scampers 
+ 9. NecroLurk [Flash] by wdom & K-statik 
+10. Web Distortion [Flash] by Northern Dragons 
+11. Diip [Flash] by Inapt 
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">dylandrazen is my superhero / threepixels<br>2003<br><br><img src="data/8899.gif"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Christmas (in a wild style) / PowerPuff Girls<br>2003<br><br><img src="data/11215.gif"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">The Hypnotizer / Paradox<br>2004<br><br><img src="data/11650.gif"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=04">Assembly 2004</a></p>
+            <p class="center">Browser demo</a><br>
+<pre>
+1 Mooncheese by Shingebis [Javascript & DHTML]
+2 the Summer is HERE! by kellari & inapt [Flash]
+3 Kontrast by Pyrotech [Flash]
+4 Governmentro by MukaSmarts [Shockwave 3D & Flash]
+5 Party Island by Poro & Exca [Flash]
+6 Kuutioprojekti by Plinc [Flash]
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">$21 / Orion<br>Buenzli 2004<br><br><img src="data/13145.jpg"></p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=05">Assembly 2005</a></p>
+            <p class="center">Browser demo</a><br>
+<pre>
+1 Redbug by Shingebis
+2 the drop by komplex
+3 pure javascript demo by IKU
+4 Neja by ribbon + bomb
+5 Scene of Life by Inapt & Static
+6 I,Mofo by Pyrotech
+7 Etsin unelmaa by CND GROUP
+</pre>
+</p>
+          </section>
+        </div>
+		
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center"><a href="http://vgo.w-d-n-c.com/electro-music-transform.html">Electro Music Transform</a> / Videogame Orchestra<br>2005<br><br><img src="data/20493.gif"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">holy guadalupe! / xplsv<br>2006<br><br><img src="data/25593.png"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=06">Assembly 2006</a></p>
+            <p class="center">Browser demo</a><br>
+<pre>
+1 Who Killed Travolta? by Evo Flash / Bombsquad
+2 Tokyo-Bangkok-Tokyo by Pyrotech
+3 Even More Explosions in the Sky by jac
+4 Gallions Reach by Gasman
+5 Seed Vessel by Lootikko
+6 SqUaReThRuSteR by MiiKA & tEEMU BRoDUCTiONz
+7 demo by Dreadful Sight
+</pre>
+</p>
+          </section>
+        </div>  
+
+<!--        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Who Killed Travolta? / Evoflash & Bombsquad<br>2006<br><br><img src="data/25802.jpg"></p>
+          </section>
+        </div>-->
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1333&when=07">flashscene.org 32k compo</a></p>
+            <p class="center">Flash compo</a><br>
+<pre>
+ 1. Flint - Evoflash
+ 2. Beat - OOS
+ 3. Alchemist 23k - Lume Crew
+ 4. Carnal - Minority
+ 5. LCD - Unic0rn
+</pre>
+</p>
+          </section>
+        </div> 
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1343&when=07">Numérica 2007</a></p>
+            <p class="center">Flash compo</a><br>
+<pre>
+01 New Order - Makaltri
+02 FDA010 - Dahan|BOS^FDA
+03 bluepink - krol girxavier
+</pre>
+</p>
+          </section>
+        </div> 
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=7&when=07">Assembly 2007</a></p>
+            <p class="center">Browser demo</a><br>
+<pre>
+1 ADHDTV by Evoflash & BombSquad
+2 Continuum by Minority
+3 Pangea Ultima by Pyrotech
+4 Lost In Lava Lamp by Lume Crew
+5 pixtures by komplex & slengpung
+6 Oral Tentacle by wdc
+</pre>
+</p>
+          </section>
+        </div>  
+
+ <!--       <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">ADHDTV / Evoflash & Bombsquad<br>2006<br><br><img src="data/31541.jpg"></p>
+          </section>
+        </div>-->
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1333&when=07">flashscene.org democompo</a></p>
+            <p class="center">Flash compo</a><br>
+<pre>
+1 manus by Minority
+2 assembly invitation by Evoflash
+3 adore chill by Jac
+4 water colors by Wide Load
+5 bluewaltz by Pandafox
+6 hot single by Inapt
+7 maplane by MAW
+</pre>
+</p>
+          </section>
+        </div> 
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">99er / Evoflash & Bombsquad<br>Assembly 2008<br><br><img src="data/51118.jpg"></p>
+          </section>
+        </div>
+
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Severity Of Grey / Evoflash<br>Assembly 2009<br><br><img src="data/53633.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Proof of Concept / Evoflash<br>(64k) Assembly 2009<br><br><img src="data/53656.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Spyral Out / Evoflash<br>Assembly 2010<br><br><img src="data/55593.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center"> Area Unstable / Badsquare <br>TRSAC 2010<br><br><img src="data/56106.jpg"></p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Cubes Of Babylon / Evoflash<br>Assembly 2011<br><br><img src="data/57474.jpg"></p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center">Penumbra / TRBL<br>Tokyo Demofest 2013<br><br><img src="data/61007.jpg"></p>
+          </section>
+        </div>                
+ 
+         <div class="slide">
+          <header><h1>Flash</h1></header>
+          <section>
+            <p class="center"><a href="http://pouet.net/prod.php?which=61489">Brain Muffin</a> / Pasmas<br>Flashback 2013<br><br><img src="data/61489.jpg"></p>
+          </section>
+        </div>
+
+
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">Browsers started supporting canvas in 2005<br><br>WebGL only in 2011</p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">3D Tomb II / ribbon<br>2007<br><br><img src="data/31093.gif"></p>
+          </section>
+        </div>
+
+         <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">Antisocial / Gasman & ZX Spectrum Orchestra <br>Sundown 2008<br><br><img src="data/51655.png"></p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">Or So They Say... / xplsv<br>Euskal 2010<br><br><img src="data/55421.jpg"></p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">2011<br><br>
+			JS1K 2011<br>
+			Revision 2011<br>
+			Mozilla Demoparty 2011<br>
+			@party 2011<br>
+			DemoJS 2011<br>
+			Solskogen 2011</p>
+			</section>
+        </div>
+		
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://js1k.com">JS1K OregonTrail'2011</a></p>
+            <p class="center">
+<pre>
+#1: FlexiDR↻ID by @keenblaze
+#2: Particle carriage by @p01
+#3: Battle in the sky by Alexander Vedernikov
+...
+</pre>
+</p>
+          </section>
+        </div>  
+		
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">No Comply / #audio<br>2011<br><br><img src="data/57155.jpg"></p>
+          </section>
+        </div>
+ 
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://www.ro.me/">RO.ME</a> / Google Chrome Experiments<br>2011</p>
+          </section>
+        </div>
+		
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">Cosmonautics Day 50 / Bemz & 7dUMP & Quite <br>2011<br><br><img src="data/56820.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1550&when=11">Revision 2011</a></p>
+            <p class="center">Web Browser democompo</a><br>
+<pre>
+1. Cube - DESiRE
+2. nop - Stroboholics & Metalvotze
+3. organ - trbl
+4. SAFETY IN THE KITCHEN - CAREBEAR
+</pre>
+</p>
+          </section>
+        </div> 
+
+ <!--       <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">Cube / Desire<br>Revision 2011<br><br><img src="data/56858.jpg"></p>
+          </section>
+        </div>-->
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">704 / Paulo Falcão<br>2011<br><br><img src="data/56992.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">MKULTRA / Bilotrip<br>Stream 2011<br><br><img src="data/56996.jpg"></p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1567&when=2011">The Flame Party Helsinki 2011</a></p>
+            <p class="center">Web Browser democompo</a><br>
+<pre>
+1. Slamdown by Traction & Hedelmae
+2. Blind Serpent by fxm
+</pre>
+</p>
+          </section>
+        </div> 
+
+<!--		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://traction.untergrund.net/slamdown/">Slamdown</a> / Traction & Hedelmae<br>2013<br><br><img src="data/57152.jpg"></p>
+          </section>
+        </div> -->
+		
+         <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1528&when=11">@party 2011</a></p>
+            <p class="center">Web Browser democompo</a><br>
+<pre>
+1. E - coda
+2. Spheres Unite - Epoxy
+3. Summertime - Desire
+</pre>
+</p>
+          </section>
+        </div>   
+   
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1570&when=11">DemoJS 2011</a></p>
+            <p class="center">Freestyle</a><br>
+<pre>
+   #1 Flares - tmp
+   #2 Canvas Trip - Adinpsz
+   #3 Irrelevant - #ponce / GFM
+   #4 Particles.js - basecode
+   #5 Clock Flower - Audrey
+   #6 Color The Wind - Tarmil / Ctrl-Alt-Test
+   #7 DemoJS - Romain / !!M
+   #8 Datagalaxy - Bordercloud
+   #9 A New Hope - yGG4x
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1570&when=11">DemoJS 2011</a></p>
+            <p class="center">1k</a><br>
+<pre>
+   #1 Glenz1k - Log
+   #2 Creation - Silexars
+   #3 gl1k Cotton Candy - p01 / ribbon
+   #4 The Ring - Bert Peters
+   #5 Orange Joy - Trigrou & Bock
+   #6 1kk - Hexapode
+   #7 Memory - Hello / Sector1
+   #8 Pixel Firework - Pilvee
+   #9 The 1d1k game - Tim Holman
+  #10 JSPaint - Flex
+  #11 Demo001 - Cheminel
+</pre>
+</p>
+          </section>
+        </div>          
+        
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=391&when=11">Solskogen 2011</a></p>
+            <p class="center">1k</a><br>
+<pre>
+    1. Something something - Tick
+    2. Democalypse Now - Flare
+    3. JavaScritp Demo On - Pants On - Stiff Nipples
+       I Want Moar - Primitive
+    5. Knowing me by gaze - visy^bilotrip
+</pre>
+</p>
+          </section>
+        </div>          
+        
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://azathioprine.digisnap.bplaced.net/index.html">Azathioprine</a> / Alcatraz<br>Evoke 2011<br><br><img src="data/57516.jpg"></p>
+          </section>
+        </div>
+       
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://www.adrianboeing.com/demoscene/explain/megademo.html">The Self-Explanatory Demo</a> by e64 & cTrix<br>Mozilla Demoparty 2011<br><br><img src="data/57739.png"></p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://www.abyss-online.de/cruisin/">Cruisin</a> by Abyss<br>tUM 2011<br><br><img src="data/58260.jpg"></p>
+          </section>
+        </div>
+		
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">2012<br><br>
+			JS1K 2012<br>
+			Revision 2012<br>
+			@party 2012<br>
+			DemoJS 2012<br>
+			Solskogen 2012</p>
+			</section>
+        </div>
+		
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://js1k.com">JS1K Love'2012</a></p>
+            <p class="center">
+<pre>
+#1: Autumn Evening By Philip Buchanan
+#2: A Rose is a Rose By Roman Cortes
+#3: Speech Synthesizer By Mathieu 'p01' Henri
+...
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1550&when=12">Revision 2012</a></p>
+            <p class="center">Web Browser democompo</a><br>
+<pre>
+01. Radiotherapy by alcatraz & scoopex
+02. Another Spring by ClySuva
+03. 20 km by Atari $T - JaKott - AmigaSuxx
+04. Twister by Abgestuerzte Akademiker
+</pre>
+</p>
+            <p class="center">Web Browser introcompo</a><br>
+<pre>
+01. "Laser" by luni/Bitpopler
+02. Fabrik by Adinpsz
+03. Fun with [0,1]^2 by g-hennux
+04. THE A-WORD by losso ^ code red
+</pre>
+</p>
+          </section>
+        </div> 
+       
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://adinpsz.org/online/fabrik/">Fabrik</a> / adinpsz<br>Revision 2012<br><br><img src="data/59071.png"></p>
+          </section>
+        </div>
+ 
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1570&when=12">DemoJS 2012</a></p>
+            <p class="center">Demo</a><br>
+<pre>
+#1 Burnt - Game From Mars
+#2 muf - trambz
+#3 BIGintro - The Matadors
+#4 peer pressure - bilotrip
+#5 mute - yGG4x
+</pre>
+</p>
+            <p class="center">10k Intro</a><br>
+<pre>
+#1 mwwnwormer - Rift
+#2 reborn - tmp in cooperation with adinpsz
+#3 parsley state - tpolm
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1570&when=12">DemoJS 2012</a></p>
+            <p class="center">1k</a><br>
+<pre>
+   #1 MATRAKA - p01 / ribbon + 4mat / ate bit
+   #2 Smoke VS Structure - Rift
+   #3 spelunking - orbitaldecay
+   #4 Bended - Log
+   #5 Morning Job - hexapode
+   #6 Nufl0wer - Straylight
+   #7 adinpsz - 512 bytes
+   #8 raster 1k - Popsy Team
+   #9 Way of Css - bobylito
+  #10 TunnelMaze - Tarmil/Ctrl-Alt-Test
+  #11 liquid pixel - Noctis
+  #12 La 3D en folie - Sector One 
+  #13 SkrE7ch - Kane
+  #14 Catarakt - Kane
+  #xx matrix - Martin
+</pre>
+</p>
+          </section>
+        </div>          
+
+<!--        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://www.p01.org/releases/MATRAKA/matraka.png.html">Matraka</a> / ribbon & atebit<br>DemoJS 2012<br><br><img src="data/59403.png"></p>
+          </section>
+        </div>
+-->		
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=391&when=12">Solskogen 2012</a></p>
+            <p class="center">Web Demo</a><br>
+<pre>
+ 1. HONEYCOMB - Ninjadev
+ 2. How Glow Can You Go? - Stiff Nipples
+ 3. Unusual Mind - Randy/Relapse
+ 4. Weboholics - Indigo
+ 5. LMS - Daeken
+ 6. Island green loreen - The Gang
+</pre>
+</p>
+          </section>
+        </div>  		
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://digisnap.bplaced.net/70s">70s</a> / Alcatraz<br>Evoke 2012<br><br><img src="data/59697.jpg"></p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://patp.at/3ln_chimera_-_jpb/demo/jpb/">JPB</a> / 3LN & Chimera Music<br>Evoke 2012<br><br><img src="data/59702.png"></p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://dilemma.ws/demo/state-zero-one">State Zero-One</a> / Dilemma<br>Function 2012<br><br><img src="data/60400.jpg"></p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://3ln.eu/twogather/">Twogather</a> / 3LN<br>MAIN 2012 / Outline 2012<br><br><img src="data/60462.png"></p>
+          </section>
+        </div>
+				
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://litewerx.dk/microscopix">Microscopix</a> / LiteWerx.<br>TRSAC 2012<br><br><img src="data/60552.jpg"></p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">2013<br><br>
+			JS1K 2013<br>
+			Revision 2013<br>
+			DemoJS 2013<br>
+			...</p>
+			</section>
+        </div>
+		
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://js1k.com">JS1K Spring'2013</a></p>
+            <p class="center">
+<pre>
+#1: Strange crystals II By Philippe Deschaseaux
+#2: Furbee, get out of that tunnel ASAP! By Roman Cortes
+#3: 3013 The 䕵 space-time fracture By Mathieu 'p01' Henri
+...
+</pre>
+</p>
+          </section>
+        </div>  		
+		
+       <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1550&when=13">Revision 2013</a></p>
+            <p class="center">Web Browser Demo</a><br>
+<pre>
+01 doppelhirn by losso/code red
+02 Js Pride by TiteiKo + wsmind + Modraw
+03 Scenefinity by Mithaldu/SVatG
+04 Inedible Candy by TPOLM
+05 Soundless by AMcBain / from://kennewick
+</pre>
+</p>
+          </section>
+        </div>  
+
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1570&when=13">DemoJS 2013</a></p>
+            <p class="center">Demo</a><br>
+<pre>
+    1.  #04    51 pts    Kiwi - Kiwi
+    2.  #02    48 pts    lol.js - Sam
+    3.  #03    40 pts    Stars in your brain - greweb
+    4.  #01    11 pts    to_the_beat // js - 5013 / xplsv
+</pre>
+</p>
+          </section>
+        </div>  
+
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1570&when=13">DemoJS 2013</a></p>
+            <p class="center">8k Intro</a><br>
+<pre>
+    1.  #06    60 pts    GrandPa - Adinpsz
+    2.  #07    40 pts    CRTeCK - TiteiKo - wsmind - Did'
+    3.  #05    29 pts    Oli - taG
+    4.  #04    16 pts    Pointless - TheT(ourist)
+    5.  #02     8 pts    Fake Plastic Cubes: Part 2 - Gasman
+    6.  #03     7 pts    Bitslife - Wiz / Trolls In The Shadows
+    7.  #01     5 pts    No Javascript - X-Men
+</pre>
+</p>
+          </section>
+        </div>   
+		
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=1570&when=13">DemoJS 2013</a></p>
+            <p class="center">1k Intro</a><br>
+<pre>
+    1.  #07    74 pts    MINAMI DISTRICT - p01 / ribbon
+    2.  #04    44 pts    Rainbowave - jmpp
+    3.  #06    14 pts    alienwatch - g012
+    4.  #05    11 pts    biloblaster - bilotrip
+    5.  #01     9 pts    A1ku - Guillaume S
+    6.  #03     8 pts    ROTOZOOM - nanard
+    7.  #02     7 pts    Balls! - TheT(ourist)
+</pre>
+</p>
+          </section>
+        </div>               
+ 
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://lbrtw.com/artsy">Artsy (and slightly insane)</a> / bcat<br>2013<br><br><img src="data/61421.jpg"></p>
+          </section>
+        </div>
+ 
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://demo.supadezign.com/alamelon/">à la Melon</a> / Solo<br>2013<br><br><img src="data/61528.jpg"></p>
+          </section>
+        </div> 
+ 
+		<div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+          	<p style="font-size: 40px; text-align: center"><a href="http://pouet.net/party.php?which=391&when=13">Solskogen 2013</a></p>
+            <p class="center">Shadertoy</a><br>
+<pre>
+1. polyanka - w23
+2. I Want To Revert - Daeken of Primitive
+3. Stunnel - Tick of Excess
+</pre>
+</p>
+          </section>
+        </div>  		
+ 
+        <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://www.outracks.com/demos/solskogen13/">Where no one can hear you scene</a> / Outracks<br>Solskogen 2013<br><br><img src="data/61595.jpg"></p>
+          </section>
+        </div> 
+ 
+         <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center"><a href="http://www.mrdoob.com/files/temp/xplsv_obsidian/index.html">Obsidian</a> / xplsv<br>Euskal 2013<br><br><img src="data/61621.png"></p>
+          </section>
+        </div> 
+
+ 
+          <div class="slide">
+          <header><h1>Javascript and WebGL</h1></header>
+          <section>
+            <p class="center">Good fight!<br><br>Good night!<br><br><a href="http://tinyurl.com/webdemos">http://tinyurl.com/webdemos</a></p>
+          </section>
+        </div> 
+ 
+      </div> <!-- slides -->
+      <style>
+      #speaker-note {
+        position:absolute;
+        left: 0;
+        top: 80%;
+        width: 100%;
+        height: 20%;
+        z-index: 50;
+        opacity: 0.75;
+        background-color: white;
+        overflow: auto;
+        padding: 2px 20px;
+        -webkit-transition: top 0.5s ease-in-out;
+        -moz-transition: top 0.5s ease-in-out;
+        -o-transition: top 0.5s ease-in-out;
+        transition: top 0.5s ease-in-out;
+      }
+      #speaker-note.invisible {
+        top: 101%;
+      }
+      </style>
+      <div id="speaker-note" class="invisible" style="display: none;">
+      </div> <!-- speaker note -->
+    </div> <!-- presentation -->
+
+    <script src="js/utils.js?20110617"></script>
+    
+  </body>
+
+</html>
